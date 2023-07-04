@@ -2,13 +2,15 @@
 
 <html>
     <head>
-        <!--#include virtual="includes/favicon.html" -->
+        <script src=".netlify/functions/includes.js"></script>
+        <script> includeHTML('includes/favicon.html', 'head'); </script>
+
         <link rel="stylesheet" href="style.css">
 
         <title> AxerTheAxe </title>
     </head>
     <body>
-        <!--#include virtual="includes/navbar.html" -->
-        <!--#include virtual="includes/footer.html" -->
+         <script> includeHTML('includes/navbar.html', 'body'); </script>
+          <script> includeHTML('includes/footer.html', 'body'); </script>
     </body>
 </html>
